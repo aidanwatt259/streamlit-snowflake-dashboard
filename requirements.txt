@@ -1,4 +1,10 @@
-anaconda-anon-usage @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_24u6uho4yn/croot/anaconda-anon-usage_1749054781871/work
+streamlit
+snowflake-snowpark-python
+snowflake-connector-python
+pandas
+numpy
+anaconda-anon-usage @ 
+file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_24u6uho4yn/croot/anaconda-anon-usage_1749054781871/work
 annotated-types @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/annotated-types_1728600810161/work
 archspec @ file:///croot/archspec_1709217642129/work
 boltons @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_1cfrddp8h_/croot/boltons_1751383740352/work
