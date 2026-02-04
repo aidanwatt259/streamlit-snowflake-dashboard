@@ -5,8 +5,16 @@ import numpy as np
 # -----------------------------
 # 1. Get Snowflake Lab Session
 # -----------------------------
-from snowflake.snowpark.context import get_active_session
-session = get_active_session()
+import streamlit as st
+from snowflake.snowpark import Session
+
+# If running in Streamlit in Snowflake, an active session exists.
+# If running locally / Streamlit Cloud, create a session from secrets.
+try:
+    from snowflake.snowpark.context import get_active_session
+    session = get_active_session()
+except Exception:
+    session = Session.builder.configs(st.secrets["snowflake"]).create()
 
 # Load tables
 records = session.table("LA_PERMIT_DATA.PUBLIC.PERMIT_RECORDS").to_pandas()
